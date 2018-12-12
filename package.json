@@ -1,0 +1,23 @@
+{
+  "name": "github-webhook-experiments",
+  "version": "1.0.0",
+  "description": "Experiment with webhooks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tfiwm/github-webhook-experiments.git"
+  },
+  "author": "Mitko Tschimev <mitko.tschimev@icloud.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tfiwm/github-webhook-experiments/issues"
+  },
+  "homepage": "https://github.com/tfiwm/github-webhook-experiments#readme",
+  "dependencies": {
+    "github-webhook-handler": "^0.7.1"
+  }
+}
