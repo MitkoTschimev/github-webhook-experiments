@@ -18,7 +18,8 @@ handler.on('push', function (event) {
     event.payload.repository.name,
     event.payload.ref)
 
-    console.log(event.payload);
+    console.log(event.payload.commits);
+    console.log(event.payload.head_commit);
 })
 
 handler.on('pull_request', function (event) {
