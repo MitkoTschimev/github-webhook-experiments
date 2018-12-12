@@ -17,6 +17,8 @@ handler.on('push', function (event) {
   console.log('Received a push event for %s to %s',
     event.payload.repository.name,
     event.payload.ref)
+
+    console.log(event.payload);
 })
 
 handler.on('issues', function (event) {
@@ -25,4 +27,18 @@ handler.on('issues', function (event) {
     event.payload.action,
     event.payload.issue.number,
     event.payload.issue.title)
+
+    console.log(event.payload);
+})
+
+handler.on('pull_request', function (event) {
+  console.log('Received an pull_request event for ')
+
+    console.log(event.payload);
+})
+
+handler.on('pull_request_review_comment', function (event) {
+  console.log('Received an pull_request_review_comment event for ')
+
+    console.log(event.payload);
 })
