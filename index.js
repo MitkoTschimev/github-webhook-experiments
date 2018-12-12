@@ -21,16 +21,6 @@ handler.on('push', function (event) {
     console.log(event.payload);
 })
 
-handler.on('issues', function (event) {
-  console.log('Received an issue event for %s action=%s: #%d %s',
-    event.payload.repository.name,
-    event.payload.action,
-    event.payload.issue.number,
-    event.payload.issue.title)
-
-    console.log(event.payload);
-})
-
 handler.on('pull_request', function (event) {
   console.log('Received an pull_request event for ')
 
